@@ -70,7 +70,7 @@ export const codingStats = [
 export const skillCategories = [
   {
     category: "Languages",
-    skills: ["C++", "Python", "JavaScript (ES6+)", "SQL", "Kotlin", "C"]
+    skills: ["C++", "Python", "JavaScript (ES6+)", "SQL", "C"]
   },
   {
     category: "Backend & Systems",
@@ -191,20 +191,5 @@ export const projects = [
     ],
     liveUrl: null,
     githubUrl: "https://github.com/TanayUmre/Ecommerce-Sales-Analysis"
-  },
-  {
-    id: "ecommerce-app",
-    title: "Android E-Commerce Mobile App",
-    category: "desktop",
-    tagline: "Native mobile e-commerce interface built using Kotlin and Gradle for Android devices.",
-    featured: false,
-    tech: ["Kotlin", "Android SDK", "Gradle"],
-    description: "Native mobile application exploring mobile shopping UX, product catalog layouts, and item cart interactions in Kotlin.",
-    highlights: [
-      "Engineered mobile layouts using modern Android components.",
-      "Configured Gradle build script and dependency management in Kotlin DSL."
-    ],
-    liveUrl: null,
-    githubUrl: "https://github.com/TanayUmre/Ecommerce-app"
   }
 ];

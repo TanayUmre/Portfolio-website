@@ -11,7 +11,7 @@ export default function Projects() {
     { id: 'fullstack', label: 'Full-Stack & Backend' },
     { id: 'ai', label: 'AI & Machine Learning' },
     { id: 'frontend', label: 'Frontend & UI' },
-    { id: 'desktop', label: 'Desktop & Mobile' },
+    { id: 'desktop', label: 'Desktop & Tools' },
   ];
 
   const filteredProjects = activeFilter === 'all'
