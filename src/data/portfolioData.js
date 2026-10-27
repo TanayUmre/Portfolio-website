@@ -31,7 +31,7 @@ export const codingStats = [
     platform: "LeetCode",
     rank: "Knight",
     rating: "1870",
-    detail: "Top ~5% globally. 500+ problems solved across DP, Graphs, Binary Search, and Trees.",
+    detail: "Top ~5% globally. 1100+ problems solved across DP, Graphs, Binary Search, and Trees.",
     link: "https://leetcode.com/u/TANAY_UMRE/",
     color: "#FFA116",
     badge: "Knight (1870)",
