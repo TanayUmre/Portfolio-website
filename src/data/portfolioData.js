@@ -12,7 +12,7 @@ export const personalInfo = {
     { label: "Grinding", text: "CP-31 sheet in C++ (aiming for 1400+ on Codeforces)" },
     { label: "Building", text: "Production-ready web tools with FastAPI, React & PostgreSQL" },
     { label: "Learning", text: "Systems internals, async architectures & LLM integrations" },
-    { label: "Fun Fact", text: "Solved 500+ LeetCode problems; Knight badge with 1870 peak rating" }
+    { label: "Fun Fact", text: "Solved 1100+ LeetCode problems; Knight badge with 1870 peak rating" }
   ],
   socials: {
     github: "https://github.com/TanayUmre",
