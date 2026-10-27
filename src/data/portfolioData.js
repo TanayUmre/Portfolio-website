@@ -1,12 +1,19 @@
 export const personalInfo = {
   name: "Tanay Umre",
+  handle: "TanayUmre",
   role: "Full-Stack Developer & Problem Solver",
-  tagline: "Bridging algorithmic thinking with full-stack engineering. Building scalable backends with FastAPI and modern, reactive interfaces with React.",
-  bio: "I am a developer with a deep foundation in Data Structures, Algorithms, and Competitive Programming (LeetCode Knight, 1870 peak rating) paired with practical hands-on experience building full-stack web platforms, desktop applications, and AI-powered tools.",
+  tagline: "I write fast APIs in FastAPI, reactive interfaces in React, and solve algorithmic puzzles in C++ that make my brain hurt.",
+  shortBio: "Hey! I'm Tanay — a developer who genuinely loves coding. Half my time is spent building practical full-stack projects, and the other half is spent grinding contest problems on LeetCode and Codeforces.",
   email: "tanayumre@gmail.com",
-  location: "India",
-  status: "Open to Internships, Full-Time Roles & Collaborations",
-  resumeUrl: "#", // User can replace with Google Drive link or static PDF
+  location: "India 🇮🇳",
+  status: "Available for internships, full-time engineering roles & cool projects",
+  resumeUrl: "#", // Replace with your Google Drive / static PDF link
+  now: [
+    { label: "Grinding", text: "CP-31 sheet in C++ (aiming for 1400+ on Codeforces)" },
+    { label: "Building", text: "Production-ready web tools with FastAPI, React & PostgreSQL" },
+    { label: "Learning", text: "Systems internals, async architectures & LLM integrations" },
+    { label: "Fun Fact", text: "Solved 500+ LeetCode problems; Knight badge with 1870 peak rating" }
+  ],
   socials: {
     github: "https://github.com/TanayUmre",
     linkedin: "https://www.linkedin.com/in/tanay-umre/",
@@ -24,69 +31,111 @@ export const codingStats = [
     platform: "LeetCode",
     rank: "Knight",
     rating: "1870",
-    detail: "Top ~5% globally · 500+ problems solved across DSA & Algorithmic paradigms",
+    detail: "Top ~5% globally. 500+ problems solved across DP, Graphs, Binary Search, and Trees.",
     link: "https://leetcode.com/u/TANAY_UMRE/",
     color: "#FFA116",
-    badge: "Knight (1870)"
+    badge: "Knight (1870)",
+    icon: "⚔️"
   },
   {
     platform: "CodeChef",
     rank: "3-Star Coder",
     rating: "1654",
-    detail: "Division 2 Contests · Consistent problem solving across math, greedy, and dynamic programming",
+    detail: "Division 2 contest regular. Solving under tight contest clocks with greedy & math approaches.",
     link: "https://www.codechef.com/users/tu1235",
-    color: "#9b51e0",
-    badge: "★★★ (1654)"
+    color: "#a855f7",
+    badge: "★★★ (1654)",
+    icon: "⭐"
   },
   {
     platform: "Codeforces",
     rank: "Pupil",
     rating: "1293",
-    detail: "Active participant in Div. 2 and Div. 3 rounds focusing on speed and accuracy",
+    detail: "Competing in Div. 2 & Div. 3 rounds. The best proving ground for speed and edge-case handling.",
     link: "https://codeforces.com/profile/TANAY1235",
     color: "#22c55e",
-    badge: "Pupil (1293)"
+    badge: "Pupil (1293)",
+    icon: "🎯"
   },
   {
     platform: "AtCoder",
     rank: "Brown",
     rating: "712",
-    detail: "Regular contest participation in AtCoder Beginner Contests (ABC)",
+    detail: "Weekend AtCoder Beginner Contests (ABC) focusing on clean mathematical proofs and logic.",
     link: "https://atcoder.jp/users/tu1235",
-    color: "#a8713a",
-    badge: "Brown (712)"
+    color: "#b45309",
+    badge: "Brown (712)",
+    icon: "🥋"
   },
   {
     platform: "HackerRank",
     rank: "Gold Badges",
     rating: "5★ C++ & SQL",
-    detail: "5★ in C++, 5★ in SQL, 4★ in C, 3★ in Python and Problem Solving",
+    detail: "5 Stars in C++, 5 Stars in SQL queries, 4 Stars in C, plus Problem Solving certified.",
     link: "https://www.hackerrank.com/tanayumre",
-    color: "#26a65b",
-    badge: "5★ C++ & SQL"
+    color: "#10b981",
+    badge: "5★ C++ & SQL",
+    icon: "🏅"
   }
 ];
 
 export const skillCategories = [
   {
     category: "Languages",
-    skills: ["C++", "Python", "JavaScript (ES6+)", "SQL", "C"]
+    description: "What I write most days",
+    skills: [
+      { name: "C++", level: "Primary for CP & DSA" },
+      { name: "Python", level: "APIs, Scripting & Data" },
+      { name: "JavaScript", level: "ES6+, React & Frontend" },
+      { name: "SQL", level: "Relational Queries & Joins" },
+      { name: "C", level: "Low-level Fundamentals" }
+    ]
   },
   {
     category: "Backend & Systems",
-    skills: ["FastAPI", "SQLAlchemy", "Alembic", "Pydantic", "REST APIs", "JWT Auth", "Flask"]
+    description: "Designing resilient services",
+    skills: [
+      { name: "FastAPI", level: "Async, REST & OpenAPI" },
+      { name: "PostgreSQL", level: "Neon, Schemas & Indices" },
+      { name: "SQLAlchemy", level: "ORM & Query Builder" },
+      { name: "Alembic", level: "Database Migrations" },
+      { name: "Pydantic", level: "Strict Request Validation" },
+      { name: "JWT Auth", level: "Tokens & Password Hashing" },
+      { name: "Flask", level: "Microframeworks" }
+    ]
   },
   {
     category: "Frontend & UI",
-    skills: ["React", "Vite", "Electron", "HTML5", "CSS3 / Modern CSS", "Tailwind CSS", "Responsive Design"]
+    description: "Building responsive interfaces",
+    skills: [
+      { name: "React", level: "Hooks, State & Context" },
+      { name: "Vite", level: "Next-gen Build Tooling" },
+      { name: "Electron", level: "Cross-platform Desktop" },
+      { name: "Modern CSS", level: "Flex, Grid & Variables" },
+      { name: "Tailwind CSS", level: "Utility-first Styling" },
+      { name: "Responsive UI", level: "Mobile-first Polish" }
+    ]
   },
   {
-    category: "Databases & Cloud",
-    skills: ["PostgreSQL (Neon)", "MySQL", "SQLite", "Render", "Vercel", "GitHub Actions (CI/CD / Cron)", "Git & GitHub", "Linux"]
+    category: "DevOps & Tools",
+    description: "Shipping and automating",
+    skills: [
+      { name: "Git & GitHub", level: "Version Control & PRs" },
+      { name: "GitHub Actions", level: "CI/CD & Cron Jobs" },
+      { name: "Render", level: "PaaS Cloud Hosting" },
+      { name: "Vercel", level: "Frontend Edge Deployment" },
+      { name: "Linux / Bash", level: "CLI & Server Basics" }
+    ]
   },
   {
-    category: "Data & AI",
-    skills: ["Hugging Face Inference API", "LLMs (Qwen)", "Pandas", "NumPy", "Matplotlib", "Oxlint"]
+    category: "AI & Data Tools",
+    description: "Applied machine learning & analytics",
+    skills: [
+      { name: "Hugging Face API", level: "Inference & Prompt Tuning" },
+      { name: "Qwen LLMs", level: "Instruction Generation" },
+      { name: "Pandas & NumPy", level: "Data Wrangling & Stats" },
+      { name: "Matplotlib", level: "Data Visualization" }
+    ]
   }
 ];
 
@@ -95,52 +144,52 @@ export const projects = [
     id: "url-shortener",
     title: "Full-Stack URL Shortener & Analytics",
     category: "fullstack",
-    tagline: "Enterprise-grade URL management platform with JWT authentication, custom alias engine, and automated background link pruning.",
+    tagline: "Custom short links with JWT auth, click tracking, and automated GitHub Actions garbage collection.",
+    story: "I wanted to understand how Bitly works under the hood — how collisions are handled, how custom aliases validate cleanly, and how to expire old URLs without slowing down PostgreSQL. I built this full-stack app with FastAPI and React, set up Alembic migrations, and hooked up a GitHub Actions cron job to automatically purge 30-day expired links.",
     featured: true,
-    tech: ["FastAPI", "React", "PostgreSQL", "SQLAlchemy", "Alembic", "JWT", "GitHub Actions", "Render"],
-    description: "Architected a decoupled full-stack URL shortener that resolves links with sub-second latency. Includes custom alias validation, click analytics tracking, and automated 30-day link expiration through GitHub Actions cron tasks.",
+    tech: ["FastAPI", "React", "PostgreSQL (Neon)", "SQLAlchemy", "Alembic", "JWT", "GitHub Actions", "Render"],
     highlights: [
-      "Secure user registration and JWT-based authentication with bcrypt password hashing (pwdlib).",
-      "Dynamic custom alias checking and automated 30-day URL lifecycle expiration.",
-      "Scheduled cleanup of stale links utilizing automated GitHub Actions cron jobs.",
-      "Live analytics dashboard displaying user link metrics, total clicks, and 20-link quota limits.",
-      "Deployed frontend and backend independently on Render with a serverless Neon PostgreSQL cluster."
+      "JWT user auth with bcrypt password hashing (pwdlib)",
+      "Custom alias reservation engine & click-count analytics",
+      "Automated 30-day URL expiration via scheduled GitHub Actions cron jobs",
+      "Per-user dashboard tracking 20 stored links with live stats",
+      "Independent deployments on Render (FastAPI backend + React frontend)"
     ],
     liveUrl: "https://urlshortener-frontend-1uyh.onrender.com",
     apiUrl: "https://urlshortener-api-jra0.onrender.com",
     githubUrl: "https://github.com/TanayUmre/URLShortner",
-    demoNote: "Note: Free Render backends may take ~30s on first request to wake up from spin-down."
+    demoNote: "💡 Free tier Render backends sleep when inactive and may take ~30s on first load to wake up."
   },
   {
     id: "chef-ai",
-    title: "Chef AI – Smart Indian Recipe Generator",
+    title: "Chef AI – Smart Indian Recipe Assistant",
     category: "ai",
-    tagline: "AI pantry assistant turning household ingredients into authentic regional Indian recipes via Hugging Face LLMs.",
+    tagline: "Turn leftover pantry ingredients into authentic regional Indian recipes using Hugging Face LLMs.",
+    story: "Ever opened your fridge at 9 PM, saw two random vegetables, and had zero idea what to cook? I built Chef AI to solve that exact problem. You dump in whatever ingredients you currently have at home, and the AI suggests a practical, authentic North, South, East, or West Indian recipe with realistic spices and step-by-step instructions.",
     featured: true,
-    tech: ["React", "Vite", "Hugging Face API", "Qwen 2.5 7B", "CSS", "react-markdown"],
-    description: "Developed an AI-driven culinary application that generates tailored North, South, East, and West Indian recipes based exclusively on ingredients the user has in their pantry.",
+    tech: ["React", "Vite", "Hugging Face Inference", "Qwen 2.5 7B", "CSS", "react-markdown"],
     highlights: [
-      "Zero-waste pantry algorithm: accepts dynamic ingredient tags and prioritizes available staples.",
-      "Engineered prompts with Qwen/Qwen2.5-7B-Instruct for culinary authenticity and practical measurement suggestions.",
-      "Real-time Markdown rendering for step-by-step cooking directions and serving recommendations.",
-      "Fast, modular UI built with Vite and React component architecture."
+      "Zero-waste pantry algorithm that strictly prioritizes user-entered ingredients",
+      "Prompt-tuned Qwen 2.5 7B Instruct model tailored for Indian regional culinary methods",
+      "Markdown formatting for easy reading of ingredients and numbered cooking steps",
+      "Responsive, clean UI with dynamic ingredient chip additions"
     ],
     liveUrl: null,
     githubUrl: "https://github.com/TanayUmre/AI-Chef"
   },
   {
     id: "pomodoro-timer",
-    title: "Pomodoro Desktop Focus App",
+    title: "Minimalist Pomodoro Desktop App",
     category: "desktop",
-    tagline: "Distraction-free desktop productivity timer with mathematical circular progress rings and native window controls.",
+    tagline: "Distraction-free desktop focus timer featuring mathematical circular SVG rings and always-on-top mode.",
+    story: "Browser-based focus timers always ended up lost in my 50 open Chrome tabs. So I built a native desktop app with Electron and React. It features an 'always-on-top' floating window that stays gently in the corner while I study or code, a circular SVG ring that calculates remaining time with geometry (2 * π * r), and a burst of confetti when a focus sprint finishes.",
     featured: true,
     tech: ["Electron", "React", "JavaScript", "SVG Geometry", "Canvas Confetti"],
-    description: "Engineered a native cross-platform desktop application designed for deep work sessions, featuring floating window mode and custom SVG ring animations.",
     highlights: [
-      "Computed real-time SVG stroke-dashoffset geometry (2 * π * r) for smooth, tick-free circular progress.",
-      "Native desktop window controls configured with alwaysOnTop mode for zero-distraction productivity.",
-      "Instant Dark & Light theme switcher with state persistence.",
-      "Rewarding session-completion animations using canvas-confetti."
+      "Circular SVG ring calculated mathematically (dashoffset = circumference * (1 - progress))",
+      "Native desktop window configured with alwaysOnTop distraction-free toggle",
+      "Instant Dark / Light theme switcher with local state persistence",
+      "Celebratory confetti reward animation upon session completion"
     ],
     liveUrl: null,
     githubUrl: "https://github.com/TanayUmre/Pomodoro-Timer"
@@ -149,15 +198,15 @@ export const projects = [
     id: "tenzies-game",
     title: "Interactive Tenzies Dice Game",
     category: "frontend",
-    tagline: "Feature-packed React 19 dice game featuring dynamic scoring, ARIA accessibility, and persistent leaderboards.",
+    tagline: "Fast-paced dice game with dynamic difficulty multipliers, millisecond timer, and persistent leaderboards.",
+    story: "Took the classic dice-matching concept and leveled it up into a competitive, accessible web game. Added three difficulty tiers, dynamic roll and time penalties, local-storage leaderboard persistence, and ARIA screen-reader announcements.",
     featured: false,
     tech: ["React 19", "Vite 8", "JavaScript", "localStorage API", "ARIA Live", "Vercel"],
-    description: "Reimagined the classic Tenzies game into a full-fledged competitive web app with multiple difficulty tiers, millisecond-accurate timer, and persistent leaderboards.",
     highlights: [
-      "Three difficulty modes (8, 10, 12 dice) with dynamic roll and time penalty score calculation.",
-      "Persistent client-side leaderboard saving top scores and fewest rolls in browser localStorage.",
-      "Fully accessible UX with keyboard navigation, focus management, and ARIA live screen-reader announcements.",
-      "Live production deployment on Vercel with linting via Oxlint."
+      "Three difficulty levels (8, 10, and 12 dice) with live multiplier calculations",
+      "Client-side persistent leaderboards saving top 3 lowest rolls and highest scores per mode",
+      "Accessible design with keyboard navigation and ARIA live announcements",
+      "Deployed on Vercel with clean code quality vetted by Oxlint"
     ],
     liveUrl: "https://tenzies-tu-7422.vercel.app/",
     githubUrl: "https://github.com/TanayUmre/Tenzies-Game"
@@ -167,12 +216,12 @@ export const projects = [
     title: "CP-31 Sheet in C++",
     category: "competitive",
     tagline: "Systematic mastery of competitive programming paradigms across Codeforces rating ladders.",
+    story: "Competitive programming is where I train my analytical muscles. This repo contains clean, optimized C++ solutions for the renowned CP-31 sheet (800 to 1600+ rating brackets) covering greedy algorithms, binary search, prefix sums, and dynamic programming.",
     featured: false,
     tech: ["C++", "STL", "Algorithms", "Data Structures", "Codeforces"],
-    description: "Curated problem-solving repository solving the well-known CP-31 sheet covering ratings 800 to 1600+ with clean, modern C++ implementations.",
     highlights: [
-      "Structured implementations covering Prefix Sums, Binary Search, Two Pointers, Dynamic Programming, and Graph Traversals.",
-      "Optimized time and space complexity with custom fast I/O templates."
+      "Structured implementations covering Prefix Sums, Binary Search, Two Pointers, and DP",
+      "Optimized runtime and memory complexities with fast I/O templates"
     ],
     liveUrl: null,
     githubUrl: "https://github.com/TanayUmre/CP31_SHEET_IN_CPP"
@@ -181,13 +230,13 @@ export const projects = [
     id: "ecommerce-sales-analysis",
     title: "E-Commerce Sales Data Analysis",
     category: "data",
-    tagline: "Exploratory data analysis and trend extraction on retail sales datasets using Python scientific stack.",
+    tagline: "Exploratory data analysis uncovering revenue patterns and purchasing habits using Python & Pandas.",
+    story: "Analyzed an e-commerce sales dataset from Kaggle to understand what actually drives retail transactions. Cleaned inconsistent records, computed cohort purchasing frequencies, and visualized seasonal sales spikes.",
     featured: false,
     tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Kaggle"],
-    description: "Data analysis project identifying sales drivers, seasonal purchasing behavior, customer retention metrics, and product revenue distribution.",
     highlights: [
-      "Data cleaning, missing value imputation, and feature engineering on Kaggle retail datasets.",
-      "Visualized revenue distributions, cohort purchase frequencies, and product performance curves."
+      "Handled data cleaning, missing value imputation, and feature engineering",
+      "Visualized revenue distributions, customer retention curves, and product trends"
     ],
     liveUrl: null,
     githubUrl: "https://github.com/TanayUmre/Ecommerce-Sales-Analysis"

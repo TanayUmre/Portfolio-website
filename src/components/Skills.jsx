@@ -11,9 +11,9 @@ export default function Skills() {
         return <Cpu size={18} />;
       case 'Frontend & UI':
         return <Layout size={18} />;
-      case 'Databases & Cloud':
+      case 'DevOps & Tools':
         return <Database size={18} />;
-      case 'Data & AI':
+      case 'AI & Data Tools':
         return <BrainCircuit size={18} />;
       default:
         return <CheckCircle2 size={18} />;
@@ -26,11 +26,11 @@ export default function Skills() {
         <div className="section-header">
           <div className="section-tag">
             <Cpu size={14} />
-            <span>Technical Capabilities</span>
+            <span>Tools & Technologies</span>
           </div>
-          <h2 className="section-title">Skills & Technologies</h2>
+          <h2 className="section-title">My Tech Stack</h2>
           <p className="section-subtitle">
-            Tools, languages, and frameworks I use to design, develop, and deploy software.
+            The core languages, frameworks, and infrastructure tools I reach for when building software.
           </p>
         </div>
 
@@ -41,14 +41,18 @@ export default function Skills() {
                 <div className="skill-cat-icon">
                   {getCategoryIcon(cat.category)}
                 </div>
-                <h3 className="skill-cat-title">{cat.category}</h3>
+                <div>
+                  <h3 className="skill-cat-title">{cat.category}</h3>
+                  <span className="skill-cat-desc">{cat.description}</span>
+                </div>
               </div>
 
-              <div className="skill-pills">
+              <div className="skill-items-list">
                 {cat.skills.map((skill) => (
-                  <span key={skill} className="skill-pill">
-                    {skill}
-                  </span>
+                  <div key={skill.name} className="skill-item-card">
+                    <span className="skill-name">{skill.name}</span>
+                    <span className="skill-level">{skill.level}</span>
+                  </div>
                 ))}
               </div>
             </div>

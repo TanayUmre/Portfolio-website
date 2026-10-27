@@ -13,7 +13,7 @@ export default function CodingStats() {
           </div>
           <h2 className="section-title">Competitive Programming</h2>
           <p className="section-subtitle">
-            A strong algorithmic foundation built over hundreds of contest problems, optimizing time and space complexities.
+            A strong algorithmic foundation built over hundreds of contest problems, optimizing runtime and space complexities.
           </p>
         </div>
 
@@ -27,7 +27,10 @@ export default function CodingStats() {
               className="stat-card"
             >
               <div className="stat-card-top">
-                <span className="platform-name">{item.platform}</span>
+                <div className="platform-title-group">
+                  <span className="platform-emoji">{item.icon}</span>
+                  <span className="platform-name">{item.platform}</span>
+                </div>
                 <span className="platform-badge" style={{ borderColor: item.color, color: item.color }}>
                   {item.badge}
                 </span>
@@ -42,7 +45,7 @@ export default function CodingStats() {
               </div>
 
               <div className="stat-card-footer">
-                <span>View Profile</span>
+                <span>View Verified Profile</span>
                 <ExternalLink size={14} />
               </div>
             </a>
@@ -68,7 +71,7 @@ export default function CodingStats() {
             rel="noopener noreferrer"
             className="btn btn-outline btn-sm"
           >
-            <span>View Solutions</span>
+            <span>View Solutions Repo</span>
             <ExternalLink size={14} />
           </a>
         </div>

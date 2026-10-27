@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Sun, Moon, Menu, X, FileText, Code2 } from 'lucide-react';
+import { Sun, Moon, Menu, X, FileText, Sparkles } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export default function Navbar({ isDark, toggleTheme }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [diceVal, setDiceVal] = useState('🎲');
+  const [isRolling, setIsRolling] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,6 +31,21 @@ export default function Navbar({ isDark, toggleTheme }) {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const rollDice = () => {
+    if (isRolling) return;
+    setIsRolling(true);
+    const faces = ['⚀ 1', '⚁ 2', '⚂ 3', '⚃ 4', '⚄ 5', '⚅ 6'];
+    let count = 0;
+    const interval = setInterval(() => {
+      setDiceVal(faces[Math.floor(Math.random() * faces.length)]);
+      count++;
+      if (count > 6) {
+        clearInterval(interval);
+        setIsRolling(false);
+      }
+    }, 80);
   };
 
   return (
@@ -58,6 +75,16 @@ export default function Navbar({ isDark, toggleTheme }) {
           </ul>
 
           <div className="nav-actions">
+            {/* Playful Interactive Dice Toy */}
+            <button
+              onClick={rollDice}
+              className={`nav-dice-btn ${isRolling ? 'rolling' : ''}`}
+              title="Click to roll a die! (Homage to Tenzies)"
+              aria-label="Roll a random die"
+            >
+              <span>{diceVal}</span>
+            </button>
+
             <button
               onClick={toggleTheme}
               className="theme-toggle-btn"
@@ -81,6 +108,15 @@ export default function Navbar({ isDark, toggleTheme }) {
 
         {/* Mobile controls */}
         <div className="mobile-controls">
+          <button
+            onClick={rollDice}
+            className="nav-dice-btn"
+            title="Roll die"
+            aria-label="Roll random die"
+          >
+            <span>{diceVal}</span>
+          </button>
+
           <button
             onClick={toggleTheme}
             className="theme-toggle-btn"

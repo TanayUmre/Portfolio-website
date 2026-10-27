@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Code2, Rocket, Award, Coffee, BookOpen } from 'lucide-react';
+import { User, Rocket, Award, BookOpen, Compass, Terminal, Clock } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 export default function About() {
@@ -9,50 +9,45 @@ export default function About() {
         <div className="section-header">
           <div className="section-tag">
             <User size={14} />
-            <span>Background & Journey</span>
+            <span>Behind The Code</span>
           </div>
-          <h2 className="section-title">About Me</h2>
+          <h2 className="section-title">A Bit About Me</h2>
           <p className="section-subtitle">
-            A developer who loves solving hard problems and shipping clean, practical applications.
+            How I write code, what keeps me curious, and the principles I care about.
           </p>
         </div>
 
         <div className="about-grid">
           <div className="about-text-content">
             <h3 className="about-heading">
-              From competitive problem-solving to full-stack software engineering.
+              "If it's worth writing, it's worth making fast, reliable, and clean."
             </h3>
             
             <p className="about-paragraph">
-              My journey started with <strong>C++ and competitive programming</strong>, where I developed a rigorous appreciation for time-complexity, memory efficiency, and corner-case handling. Competing regularly on platforms like <strong>LeetCode (Knight, 1870)</strong> and <strong>CodeChef (3-Star)</strong> taught me how to break down complex constraints into elegant solutions.
+              I didn't start programming by clicking boilerplate templates. My foundation is built on <strong>C++ and competitive programming</strong>. Grinding over 500+ problems on LeetCode (earning the <strong>Knight badge with a peak rating of 1870</strong>) drilled an obsession with time complexity, memory limits, and edge cases deep into my reflexes.
             </p>
 
             <p className="about-paragraph">
-              I brought this analytical mindset into full-stack development, building modern web and desktop systems. With <strong>FastAPI, PostgreSQL, and React</strong>, I focus on clean RESTful API design, database integrity with <strong>Alembic migrations</strong>, and decoupled, reactive user experiences.
+              When I transitioned into full-stack development, that same rigor followed me. I naturally gravitated toward <strong>FastAPI and PostgreSQL</strong> because of strict type validation (Pydantic), asynchronous performance, and clean database versioning via <strong>Alembic</strong>. I like building backends that don't silently fail and frontends in <strong>React</strong> that feel instant.
             </p>
 
             <p className="about-paragraph">
-              I'm also passionate about applied AI and automation — from integrating open-source LLMs via <strong>Hugging Face</strong> in Chef AI, to automating scheduled backend maintenance with <strong>GitHub Actions</strong> workflows.
+              Outside of building APIs and solving contest rounds, I love tinkering with desktop tools in <strong>Electron</strong> and applied AI through <strong>Hugging Face</strong>.
             </p>
 
-            <div className="about-values">
-              <div className="value-item">
-                <span className="value-bullet">⚡</span>
-                <div>
-                  <strong>Performance First:</strong> Writing optimized algorithms and non-blocking asynchronous APIs.
-                </div>
+            {/* What I'm Doing Now (Live Ticker) */}
+            <div className="now-card">
+              <div className="now-header">
+                <Clock size={16} className="now-icon" />
+                <span className="now-title">What I'm focused on right now</span>
               </div>
-              <div className="value-item">
-                <span className="value-bullet">🛡️</span>
-                <div>
-                  <strong>Reliability:</strong> Robust data validation with Pydantic, relational schemas, and secure auth.
-                </div>
-              </div>
-              <div className="value-item">
-                <span className="value-bullet">🚀</span>
-                <div>
-                  <strong>Continuous Growth:</strong> Actively learning new paradigms, libraries, and frameworks every week.
-                </div>
+              <div className="now-items">
+                {personalInfo.now.map((item, idx) => (
+                  <div key={idx} className="now-item">
+                    <span className="now-item-tag">{item.label}</span>
+                    <span className="now-item-text">{item.text}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -62,24 +57,33 @@ export default function About() {
               <div className="about-stat-icon">
                 <Award size={24} color="#FFA116" />
               </div>
-              <div className="about-stat-num">Top 5%</div>
-              <div className="about-stat-desc">Global LeetCode Knight with 1870 peak contest rating</div>
+              <div className="about-stat-num">1870 Rating</div>
+              <div className="about-stat-title">LeetCode Knight</div>
+              <p className="about-stat-desc">
+                Top ~5% worldwide. Active contest solver practicing trees, dynamic programming, and graph traversals.
+              </p>
             </div>
 
             <div className="about-stat-box">
               <div className="about-stat-icon">
-                <Rocket size={24} color="#38bdf8" />
+                <Terminal size={24} color="#38bdf8" />
               </div>
-              <div className="about-stat-num">Full-Stack</div>
-              <div className="about-stat-desc">End-to-end applications deployed with automated CI/CD workflows</div>
+              <div className="about-stat-num">FastAPI & React</div>
+              <div className="about-stat-title">Production Web Architecture</div>
+              <p className="about-stat-desc">
+                Decoupled services, Alembic migrations, serverless Neon DB, and automated cron jobs via GitHub Actions.
+              </p>
             </div>
 
             <div className="about-stat-box">
               <div className="about-stat-icon">
-                <BookOpen size={24} color="#a855f7" />
+                <Compass size={24} color="#a855f7" />
               </div>
-              <div className="about-stat-num">22+ Projects</div>
-              <div className="about-stat-desc">From algorithmic CLI simulators and games to desktop Electron and AI apps</div>
+              <div className="about-stat-num">CP-31 Ladder</div>
+              <div className="about-stat-title">Systematic Codeforces Practice</div>
+              <p className="about-stat-desc">
+                Conquering curated rating ladders in C++ to sharpen mathematical reasoning and speed under time constraints.
+              </p>
             </div>
           </div>
         </div>
