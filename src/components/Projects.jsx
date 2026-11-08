@@ -17,7 +17,7 @@ export default function Projects() {
 
   const filteredProjects = activeFilter === 'all'
     ? projects
-    : projects.filter(p => p.category === activeFilter);
+    : projects.filter(p => p.category === activeFilter || p.categories?.includes(activeFilter));
 
   const toggleStory = (id) => {
     setExpandedStory(prev => ({ ...prev, [id]: !prev[id] }));
@@ -61,12 +61,20 @@ export default function Projects() {
                 className={`project-card ${project.featured ? 'featured-project-card' : ''}`}
               >
                 <div className="project-card-header">
-                  {project.featured && (
-                    <div className="featured-badge">
-                      <Sparkles size={13} />
-                      <span>Featured Build</span>
-                    </div>
-                  )}
+                  <div className="project-badges-row">
+                    {project.featured && (
+                      <div className="featured-badge">
+                        <Sparkles size={13} />
+                        <span>Featured Build</span>
+                      </div>
+                    )}
+                    {project.badge && (
+                      <div className="vibe-badge">
+                        <Sparkles size={13} />
+                        <span>{project.badge}</span>
+                      </div>
+                    )}
+                  </div>
                   <h3 className="project-title">{project.title}</h3>
                   <p className="project-tagline">{project.tagline}</p>
                 </div>

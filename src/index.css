@@ -1104,6 +1104,14 @@ ul {
   background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
 }
 
+.project-badges-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
 .featured-badge {
   display: inline-flex;
   align-items: center;
@@ -1117,7 +1125,22 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 0.75rem;
+  width: fit-content;
+}
+
+.vibe-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  background: rgba(168, 85, 247, 0.14);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  color: #c084fc;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   width: fit-content;
 }
 

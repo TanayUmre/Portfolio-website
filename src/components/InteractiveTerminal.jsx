@@ -36,14 +36,14 @@ export default function InteractiveTerminal() {
       case 'skills':
         newHistory.push({
           type: 'output',
-          text: `Languages:  C++, Python, JavaScript (ES6+), SQL, C\nBackend:    FastAPI, PostgreSQL (Neon), SQLAlchemy, Alembic, JWT\nFrontend:   React, Vite, Electron, Modern CSS, Tailwind\nDevOps:     GitHub Actions, Render, Vercel, Git, Linux`
+          text: `Languages:  C++, Python, JavaScript (ES6+), SQL, C\nBackend:    FastAPI, PostgreSQL (Neon / Supabase), SQLAlchemy, Alembic, JWT\nFrontend:   React, Vite, Electron, Modern CSS, Tailwind\nDevOps:     GitHub Actions, Render, Vercel, Git, Linux\nAI & LLMs:  Groq API (LLaMA 3.3), Hugging Face, Qwen`
         });
         break;
 
       case 'projects':
         newHistory.push({
           type: 'output',
-          text: `Featured Projects:\n1. URL Shortener (FastAPI + React + Neon PostgreSQL + Alembic)\n2. Chef AI (React + Vite + Hugging Face Qwen 2.5 LLM)\n3. Pomodoro Desktop Timer (Electron + React + SVG Math)\n4. Tenzies Dice Game (React 19 + ARIA Accessibility)`
+          text: `Featured Projects:\n1. JobCurrent (AI Career Engine · FastAPI + React + Supabase + Groq)\n2. URL Shortener (FastAPI + React + Neon PostgreSQL + Alembic)\n3. Chef AI (React + Vite + Hugging Face Qwen 2.5 LLM)\n4. Pomodoro Desktop Timer (Electron + React + SVG Math)\n5. Tenzies Dice Game (React 19 + ARIA Accessibility)`
         });
         break;
 

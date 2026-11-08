@@ -9,9 +9,9 @@ export const personalInfo = {
   status: "Available for internships, full-time engineering roles & cool projects",
   resumeUrl: "#", // Replace with your Google Drive / static PDF link
   now: [
+    { label: "Latest Build", text: "JobCurrent: India-centric AI career discovery platform (FastAPI + React + Groq)" },
     { label: "Grinding", text: "CP-31 sheet in C++ (aiming for 1400+ on Codeforces)" },
-    { label: "Building", text: "Production-ready web tools with FastAPI, React & PostgreSQL" },
-    { label: "Learning", text: "Systems internals, async architectures & LLM integrations" },
+    { label: "Building", text: "Full-stack web architectures with FastAPI, React, PostgreSQL & AI" },
     { label: "Fun Fact", text: "Solved 1100+ LeetCode problems; Knight badge with 1870 peak rating" }
   ],
   socials: {
@@ -122,6 +122,7 @@ export const skillCategories = [
     skills: [
       { name: "Git & GitHub", level: "Version Control & PRs" },
       { name: "GitHub Actions", level: "CI/CD & Cron Jobs" },
+      { name: "Supabase", level: "PostgreSQL & RLS" },
       { name: "Render", level: "PaaS Cloud Hosting" },
       { name: "Vercel", level: "Frontend Edge Deployment" },
       { name: "Linux / Bash", level: "CLI & Server Basics" }
@@ -131,6 +132,7 @@ export const skillCategories = [
     category: "AI & Data Tools",
     description: "Applied machine learning & analytics",
     skills: [
+      { name: "Groq API", level: "Fast LLaMA 3.3 Inference" },
       { name: "Hugging Face API", level: "Inference & Prompt Tuning" },
       { name: "Qwen LLMs", level: "Instruction Generation" },
       { name: "Pandas & NumPy", level: "Data Wrangling & Stats" },
@@ -140,6 +142,27 @@ export const skillCategories = [
 ];
 
 export const projects = [
+  {
+    id: "job-current",
+    title: "JobCurrent – AI Career Discovery Platform",
+    category: "fullstack",
+    categories: ["fullstack", "ai"],
+    tagline: "India-centric tech job engine with deterministic academic qualification matching, Groq AI extraction, and daily email digests.",
+    story: "Early-career tech job hunting in India is full of noise: vague eligibility criteria, outdated postings, and overseas roles with irrelevant visa barriers. I built JobCurrent by combining modern AI-assisted vibe coding with strict full-stack engineering—architecting a FastAPI backend with a 20/20 passing Pytest suite, deterministic CGPA/batch/branch matching rules, Groq LLaMA 3.3 70B structured extraction, and a live React + Vite frontend connected to Supabase PostgreSQL and Resend automated email digests.",
+    featured: true,
+    badge: "Vibe Coded with AI",
+    tech: ["FastAPI", "React", "Supabase PostgreSQL", "Groq AI (LLaMA 3.3)", "Tailwind CSS", "Resend API", "Pytest", "Vercel"],
+    highlights: [
+      "Deterministic academic qualification engine: matches candidate CGPA, graduation batch (e.g. 2025/2026), and branch with real-time eligibility tags.",
+      "Automated multi-source ingestion pipeline: crawls verified company boards with SHA-256 fingerprint deduplication.",
+      "High-throughput Groq AI parsing: LLaMA 3.3 70B structured JSON extraction with deterministic regex fallbacks.",
+      "Automated morning digests: schedules and delivers personalized HTML job summaries via the Resend API.",
+      "Production-ready test suite: 20/20 passing Pytest test cases, decoupled architecture, and deployed live on Vercel."
+    ],
+    liveUrl: "https://frontend-tawny-psi-86.vercel.app/",
+    githubUrl: "https://github.com/TanayUmre/JobCurrent",
+    demoNote: "⚡ Fully functional live app: features India-specific tech opportunities, city filters, and application tracking."
+  },
   {
     id: "url-shortener",
     title: "Full-Stack URL Shortener & Analytics",
