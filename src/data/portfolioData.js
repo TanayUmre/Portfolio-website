@@ -64,7 +64,7 @@ export const codingStats = [
     detail: "Weekend AtCoder Beginner Contests (ABC) focusing on clean mathematical proofs and logic.",
     link: "https://atcoder.jp/users/tu1235",
     color: "#b45309",
-    badge: "Brown (712)",
+    badge: "Brown (783)",
     icon: "🥋"
   },
   {
