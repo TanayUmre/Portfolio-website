@@ -60,7 +60,7 @@ export const codingStats = [
   {
     platform: "AtCoder",
     rank: "Brown",
-    rating: "712",
+    rating: "783",
     detail: "Weekend AtCoder Beginner Contests (ABC) focusing on clean mathematical proofs and logic.",
     link: "https://atcoder.jp/users/tu1235",
     color: "#b45309",
